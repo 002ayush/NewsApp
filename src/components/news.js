@@ -21,7 +21,7 @@ const  News = (props) =>{
     document.title = `News-${captilize(props.category)}`;
     const updateNews = async () => {
       console.log("Component did mount occurred");
-      let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=ede1f808881541e1b228726c505a4f97&page=${page}&pageSize=${props.pageSize}`;
+      let url = `url?country=${props.country}&category=${props.category}&apiKey=ApiKey&page=${page}&pageSize=${props.pageSize}`;
       //this.setState({loading:true});
       let data = await fetch(url);
       let parseddata = await data.json();
